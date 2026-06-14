@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Conclusion</title>
+</head>
+<body>
+    <h1>Conclusion</h1>
+
+```
+<p>
+    Santa Maria del Fiore is one of the most important monuments in Italy.
+    Its architecture, history, and cultural significance make it a symbol
+    of Florence and the Renaissance.
+</p>
+
+<p>
+    Through Linked Open Data resources such as ArCo and Wikidata, it is
+    possible to discover connections between people, places, artworks,
+    and historical events related to the cathedral.
+</p>
+
+<a href="index.html">Back Home</a>
+```
+
+</body>
+</html>
