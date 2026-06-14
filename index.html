@@ -1,35 +1,95 @@
+---
+layout: default
+title: Santa Maria del Fiore
+---
+
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Santa Maria del Fiore</title>
-</head>
-
-<body>
-
-    <h1>Santa Maria del Fiore</h1>
-
-    <p>
-        Welcome to our digital humanities project about Santa Maria del Fiore,
-        one of the most iconic cathedrals in Italy. This website explores its
-        history, architectural significance, and cultural importance through
-        a digital perspective.
-    </p>
-
-    <h2>Team Members</h2>
-
+<html lang="en">
+  
+  <nav>
+    <h3>Sections:</h3>
     <ul>
-        <li>Shirley Sandoval</li>
-        <li>Anna Moskovskaia</li>
+      <li><a href="topic.html">🏛️ Topic</a></li>
+      <li><a href="methodology.html">⚒️ Methodology</a></li>
+      <li><a href="sparql.html">📊 SPARQL & Results</a></li>
+      <li><a href="gaps.html">🔍 Identifying Gaps</a></li>
+      <li><a href="prompts.html">💬 LLM Prompts</a></li>
+      <li><a href="rdf.html">🔗 RDF Triples</a></li>
+      <li><a href="challenges.html">⚠️ Challenges</a></li>
+      <li><a href="conclusion.html">✅ Conclusion</a></li>
     </ul>
+  </nav>
+</div>
 
-    <h2>Explore the Project</h2>
+  <img src="nonantola.png" alt="Santa Maria del Fiore" style="width:600px; border-radius:10px; margin-top:20px;">
 
-    <ul>
-        <li><a href="methodology.html">Methodology</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="architecture.html">Architecture</a></li>
-        <li><a href="conclusion.html">Conclusion</a></li>
-    </ul>
+  <main>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the <a href="https://www.unibo.it/en" target="_blank">University of Bologna</a>
+. 
+        This page aims to explore the history and architecture of Santa Maria del Fiore by combining traditional historical research with digital tools such as SPARQL queries and Large Language Models (LLMs). 
+        These tools are used to retrieve, analyze, and enrich information about the cathedral within cultural heritage knowledge graphs.
+      </p>
+      <p>
+        Analizing <strong>Santa Maria del Fiore</strong>, using knowledge graphs is important because it allows information about the cathedral—such as its history, architects, artworks, and structural features to be represented in a structured and interconnected way. 
+        This makes it easier to link data from different sources, discover hidden relationships, and enrich existing cultural heritage information using digital tools like SPARQL queries and Large Language Models.
+      </p>
+      <p>
+        As our base knowledge graph, we selected <a href="http://wit.istc.cnr.it/arco/" target="_blank">ArCo</a> – the official ontology network and RDF dataset of the Italian Ministry of Culture. 
+        ArCo offers a rich and well-structured representation of Italy’s cultural heritage and provides an excellent SPARQL endpoint for advanced semantic exploration. 
+        Its modular architecture and domain-specific ontologies made it a strong choice for our project’s objectives, especially in the context of tangible heritage.
+      </p>
+    </section>
 
+   <section id="tools" style="margin-top: 50px;">
+  <h2>Tools</h2>
+  <ul>
+    <li><a href="http://wit.istc.cnr.it/arco/" target="_blank"><strong>ArCo</strong></a></li>
+    <li><a href="https://dati.cultura.gov.it/sparql" target="_blank"><strong>ArCo SPARQL endpoint</strong></a></li>
+    <li><a href="https://gemini.google.com/?hl=it" target="_blank"><strong>Gemini</strong></a></li>
+    <li><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></li>
+  </ul>
+</section>
+
+    <section>
+      <h2>Our Team</h2>
+<p>This project was collaboratively developed by:</p>
+
+<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+  
+  <div style="text-align: center;">
+    <img src="alice.jpg" alt="Alice Montorsi" style="width: 120px; border-radius: 50%;">
+    <p><strong>Alice Montorsi</strong></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="giulia-manenti.jpg" alt="Giulia Manenti" style="width: 120px; border-radius: 50%;">
+    <p><strong>Giulia Manenti</strong></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="giulia-marani.jpg" alt="Giulia Marani" style="width: 120px; border-radius: 50%;">
+    <p><strong>Giulia Marani</strong></p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="matilde.jpg" alt="Matilde Ciarrocchi" style="width: 120px; border-radius: 50%;">
+    <p><strong>Matilde Ciarrocchi</strong></p>
+  </div>
+
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Knowledge Engineering Computer Studies for Humanities Project – University of Bologna</p>
+  </footer>
+  <hr>
+<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
+  <a href="topic.html">Next →</a>
+</div>
 </body>
 </html>
