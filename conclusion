@@ -1,27 +1,18 @@
+```html
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Conclusion</title>
 </head>
+
 <body>
+
     <h1>Conclusion</h1>
 
+    <p>
+        Santa Maria del Fiore is not only one of the most significant architectural landmarks in Italy, but also an important symbol of Florence’s cultural and artistic heritage. Through this project, we explored its history, architectural features, and international significance using digital humanities approaches.
+    </p>
+
+    <p>
+        The use of Linked Open
 ```
-<p>
-    Santa Maria del Fiore is one of the most important monuments in Italy.
-    Its architecture, history, and cultural significance make it a symbol
-    of Florence and the Renaissance.
-</p>
-
-<p>
-    Through Linked Open Data resources such as ArCo and Wikidata, it is
-    possible to discover connections between people, places, artworks,
-    and historical events related to the cathedral.
-</p>
-
-<a href="index.html">Back Home</a>
-```
-
-</body>
-</html>
