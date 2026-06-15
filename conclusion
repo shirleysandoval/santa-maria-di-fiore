@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conclusion - Cattedrale di Santa Maria del Fiore</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Conclusion</title>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="methodology.html">Methodology</a></li>
-            <li><a href="sparql.html">SPARQL Queries</a></li>
-            <li><a href="team.html">Team Members</a></li>
-            <li><a href="conclusion.html">Conclusion</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- TÍTULO -->
-<h1>Conclusion</h1>
-
-<!-- CONTENIDO -->
-<section>
+    <h1>Conclusion</h1>
 
     <p>
-        The Cattedrale di Santa Maria del Fiore represents one of the most remarkable achievements in architectural and cultural history. Its construction reflects the artistic ambition and technological innovation of the Renaissance period, particularly through the groundbreaking work of Filippo Brunelleschi and the creation of its iconic dome.
-
-        This project allowed us to explore the cathedral not only from a historical and architectural perspective but also through a structured digital approach using RDF and SPARQL queries. By organizing information into connected data, it becomes possible to better understand the relationships between historical figures, architectural elements, and cultural context.
-
-        Overall, this work demonstrates how digital tools can enhance the study and preservation of cultural heritage, making complex historical information more accessible, organized, and meaningful for academic and educational purposes.
+        Working on the Cattedrale di Santa Maria del Fiore provided a clear understanding of both the capabilities and limitations of combining structured knowledge sources such as ArCo with Large Language Models. Querying ArCo highlighted how dependent results are on data coverage and structure: while it is highly precise when information is available, certain aspects of the cathedral remain partially represented or fragmented, particularly those related to architectural interpretation and later historical modifications.
     </p>
 
-</section>
+    <p>
+        This limitation became the starting point for the second part of the analysis. By using ChatGPT and Gemini, it was possible to explore how LLMs compensate for missing structured data by generating coherent narrative explanations. However, the comparison also revealed important differences between the models: ChatGPT generally provided more structured and detailed responses, while Gemini tended to produce broader, more descriptive explanations with varying levels of specificity depending on the prompt type.
+    </p>
 
-<!-- BOTÓN BACK TO HOME -->
-<div style="text-align:center; margin:40px;">
-    <a href="index.html" class="home-button">⬅ Back to Home</a>
-</div>
+    <p>
+        Overall, the study shows a clear contrast between structured ontologies and generative AI systems. ArCo ensures accuracy and formal consistency but lacks completeness in certain cultural or interpretative dimensions, whereas LLMs offer flexibility and fluency but may introduce generalizations or uneven levels of precision. This makes critical evaluation essential when using AI systems for cultural heritage interpretation.
+    </p>
 
-<!-- FOOTER -->
-<footer>
-    <p>Knowledge Engineering for the humanities - Cattedrale di Santa Maria del Fiore</p>
-</footer>
+
+    <h1>Challenges</h1>
+
+    <p>
+        One of the initial challenges of this project was understanding how SPARQL queries are structured and how to formulate them accurately. This query language requires a very precise syntax and logical structure, and even small mistakes can lead to incorrect or empty results. As a result, learning to design effective queries involved a significant amount of trial and error and practice.
+    </p>
+
+    <p>
+        In addition, the ArCo SPARQL endpoint was at times slow or unresponsive, which made the process of testing and refining queries more difficult and time-consuming. This affected the workflow, as each modification had to be carefully checked to ensure that the system was responding correctly.
+    </p>
+
+
+    <h1>Future Developments</h1>
+
+    <p>
+        Future work could expand this approach by enriching structured knowledge bases such as ArCo with more detailed entries related to Santa Maria del Fiore Cathedral, particularly in areas such as architectural modifications, conservation history, and interpretative aspects of design. This would help reduce current gaps between structured data and human-readable explanations.
+    </p>
+
+    <p>
+        On the LLM side, future experiments could include more advanced prompting strategies such as iterative prompting, few-shot learning, or chain-of-thought reasoning to improve consistency and reduce variation between models. Introducing a third model or external academic sources for cross-validation could also strengthen the reliability of comparisons.
+    </p>
+
+    <p>
+        Finally, this methodology could be extended to other cultural heritage sites in Florence or beyond, allowing for a broader evaluation of how well AI systems support the understanding of architectural and historical heritage across different contexts.
+    </p>
 
 </body>
 </html>
