@@ -1,80 +1,173 @@
----
-layout: default
-title: Santa Maria del Fiore
----
-
 <!DOCTYPE html>
 <html lang="en">
-  
-  <nav>
-    <h3>Sections:</h3>
-    <ul>
-      <li><a href="topic.html"> Topic</a></li>
-      <li><a href="methodology.html"> Methodology</a></li>
-      <li><a href="sparql.html"> SPARQL & Results</a></li>
-      <li><a href="prompts.html"> LLM Prompts</a></li>
-      <li><a href="rdf.html"> RDF Triples</a></li>
-      <li><a href="conclusion.html"> Conclusion</a></li>
-    </ul>
-  </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattedrale di Santa Maria del Fiore</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f5f5f5;
+            line-height:1.6;
+        }
+
+        header{
+            background-color:#2c3e50;
+            padding:15px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        nav ul li{
+            margin:0 15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#f39c12;
+        }
+
+        .hero{
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        .hero h1{
+            font-size:3rem;
+            font-weight:bold;
+            color:#2c3e50;
+            margin-bottom:25px;
+        }
+
+        .hero img{
+            width:80%;
+            max-width:800px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        section{
+            background:white;
+            margin:30px auto;
+            width:85%;
+            max-width:1000px;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2{
+            color:#2c3e50;
+            margin-bottom:15px;
+        }
+
+        footer{
+            text-align:center;
+            background:#2c3e50;
+            color:white;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#sparql">SPARQL Queries</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Cattedrale di Santa Maria del Fiore</h1>
+
+    <img src="santamaria.jpg" alt="Cattedrale di Santa Maria del Fiore">
 </div>
 
-  <img src="descarga (1).jpg" alt="Santa Maria del Fiore" style="width:600px; border-radius:10px; margin-top:20px;">
-
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>
-        This project was developed within the framework of the KE4H (Knowledge Engineering for the Humanities) course at the <a href="https://www.unibo.it/en" target="_blank">University of Bologna</a>
-. 
-        This page aims to explore the history and architecture of Santa Maria del Fiore by combining traditional historical research with digital tools such as SPARQL queries and Large Language Models (LLMs). 
-        These tools are used to retrieve, analyze, and enrich information about the cathedral within cultural heritage knowledge graphs.
-      </p>
-      <p>
-        Analizing <strong>Santa Maria del Fiore</strong>, using knowledge graphs is important because it allows information about the cathedral—such as its history, architects, artworks, and structural features to be represented in a structured and interconnected way. 
-        This makes it easier to link data from different sources, discover hidden relationships, and enrich existing cultural heritage information using digital tools like SPARQL queries and Large Language Models.
-      </p>
-      <p>
-        As our base knowledge graph, we selected <a href="http://wit.istc.cnr.it/arco/" target="_blank">ArCo</a> – the official ontology network and RDF dataset of the Italian Ministry of Culture. 
-        ArCo offers a rich and well-structured representation of Italy’s cultural heritage and provides an excellent SPARQL endpoint for advanced semantic exploration. 
-        Its modular architecture and domain-specific ontologies made it a strong choice for our project’s objectives, especially in the context of tangible heritage.
-      </p>
-    </section>
-
-   <section id="tools" style="margin-top: 50px;">
-  <h2>Tools</h2>
-  <ul>
-    <li><a href="http://wit.istc.cnr.it/arco/" target="_blank"><strong>ArCo</strong></a></li>
-    <li><a href="https://dati.cultura.gov.it/sparql" target="_blank"><strong>ArCo SPARQL endpoint</strong></a></li>
-    <li><a href="https://gemini.google.com/?hl=it" target="_blank"><strong>Gemini</strong></a></li>
-    <li><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></li>
-  </ul>
+<section id="history">
+    <h2>History</h2>
+    <p>
+        Write here the historical background of the Cattedrale di Santa Maria del Fiore.
+        Include information about its construction, important dates, architects,
+        and its significance in Florence and Italian history.
+    </p>
 </section>
 
-    <section>
-      <h2>Team members</h2>
+<section id="architecture">
+    <h2>Architecture</h2>
+    <p>
+        Describe the architectural style of the cathedral.
+        You can explain the Gothic elements, Brunelleschi's dome,
+        decorative features, materials, and artistic importance.
+    </p>
+</section>
 
-<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
-  
-  <div style="text-align: center;">
-    <p><strong>Anna Moskovskaia</strong></p>
-  </div>
+<section id="methodology">
+    <h2>Methodology</h2>
+    <p>
+        Explain how you created your Linked Data project.
+        Describe the sources used, ontology design, RDF triples,
+        and any tools employed during the project development.
+    </p>
+</section>
 
-  <div style="text-align: center;">
-    <p><strong>Shirley Sandoval</strong></p>
-  </div>
+<section id="sparql">
+    <h2>SPARQL Queries</h2>
+    <p>
+        Insert your SPARQL queries and explain what information each query retrieves.
+    </p>
 
-</div>
+    <pre>
+SELECT ?author
+WHERE {
+   ?author rdf:type ex:Architect .
+}
+    </pre>
+</section>
 
-    </section>
-  </main>
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+        Summarize the importance of the Cattedrale di Santa Maria del Fiore
+        and the main findings of your Linked Data project.
+    </p>
+</section>
 
-  <footer>
-    <p>© 2025 Knowledge Engineering Computer Studies for Humanities Project – University of Bologna</p>
-  </footer>
-  <hr>
-<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
-  <a href="topic.html">Next →</a>
-</div>
+<footer>
+    <p>Linked Data Project - Cattedrale di Santa Maria del Fiore</p>
+</footer>
+
 </body>
 </html>
