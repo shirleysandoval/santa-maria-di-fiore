@@ -141,8 +141,6 @@ and red stone—while the interior is marked by expansive, austere spaces leadin
 <section id="methodology">
     <h2>Methodology</h2>
     <p>
-## Methodology
-
 This project was developed following a structured process to organize information about the Cattedrale di Santa Maria del Fiore and present it in a web format. First, reliable information about the cathedral was collected, 
 focusing on its history, architecture, and cultural importance. This content was then organized into clear categories to be used in the website sections.
 
@@ -160,16 +158,58 @@ were organized in a repository for proper deployment and presentation.
 
 <section id="sparql">
     <h2>SPARQL Queries</h2>
+
     <p>
-        Insert your SPARQL queries and explain what information each query retrieves.
+        The following SPARQL queries were used to retrieve and explore structured information about the Cattedrale di Santa Maria del Fiore. These queries were created based on RDF triples, where data is organized into subject–predicate–object relationships.
     </p>
 
+    <h3>1. Query to find the architect of the cathedral</h3>
     <pre>
-SELECT ?author
+SELECT ?architect
 WHERE {
-   ?author rdf:type ex:Architect .
+    ?cathedral ex:hasArchitect ?architect .
 }
     </pre>
+    <p>
+        This query retrieves the name of the architect(s) associated with the cathedral, such as Filippo Brunelleschi, who designed the famous dome.
+    </p>
+
+    <h3>2. Query to find the location of the cathedral</h3>
+    <pre>
+SELECT ?location
+WHERE {
+    ?cathedral ex:locatedIn ?location .
+}
+    </pre>
+    <p>
+        This query returns the geographical location of the cathedral, which is Florence, Italy.
+    </p>
+
+    <h3>3. Query to retrieve historical information</h3>
+    <pre>
+SELECT ?history
+WHERE {
+    ?cathedral ex:hasHistory ?history .
+}
+    </pre>
+    <p>
+        This query extracts historical descriptions related to the construction and development of the cathedral over time.
+    </p>
+
+    <h3>4. Query to retrieve architectural style</h3>
+    <pre>
+SELECT ?style
+WHERE {
+    ?cathedral ex:hasStyle ?style .
+}
+    </pre>
+    <p>
+        This query returns the architectural style of the cathedral, highlighting its Gothic elements and Renaissance influence.
+    </p>
+
+    <p>
+        These queries demonstrate how structured data can be used to connect and retrieve information efficiently about historical and cultural heritage resources.
+    </p>
 </section>
 <section id="team">
     <h2>Team Members</h2>
