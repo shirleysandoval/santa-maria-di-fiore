@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARQL Queries - Cattedrale di Santa Maria del Fiore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="sparql.html">SPARQL Queries</a></li>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TÍTULO -->
+<h1>SPARQL Queries</h1>
+
+<!-- INTRO -->
+<section>
+    <p>
+        This section presents the SPARQL queries used in this project to retrieve structured information about the Cattedrale di Santa Maria del Fiore. Each query is based on RDF triples (subject–predicate–object), allowing us to extract meaningful relationships between the cathedral, its architects, location, history, and architectural features.
+    </p>
+</section>
+
+<!-- QUERY 1 -->
+<section>
+    <h2>1. Architect of the cathedral</h2>
+
+    <pre>
+SELECT ?architect
+WHERE {
+    ?cathedral ex:hasArchitect ?architect .
+}
+    </pre>
+
+    <p>
+        This query retrieves the architect associated with the cathedral, such as Filippo Brunelleschi, who designed the famous dome.
+    </p>
+</section>
+
+<!-- QUERY 2 -->
+<section>
+    <h2>2. Location of the cathedral</h2>
+
+    <pre>
+SELECT ?location
+WHERE {
+    ?cathedral ex:locatedIn ?location .
+}
+    </pre>
+
+    <p>
+        This query returns the geographical location of the cathedral, which is Florence, Italy.
+    </p>
+</section>
+
+<!-- QUERY 3 -->
+<section>
+    <h2>3. Historical information</h2>
+
+    <pre>
+SELECT ?history
+WHERE {
+    ?cathedral ex:hasHistory ?history .
+}
+    </pre>
+
+    <p>
+        This query extracts historical descriptions related to the construction and development of the cathedral over time.
+    </p>
+</section>
+
+<!-- QUERY 4 -->
+<section>
+    <h2>4. Architectural style</h2>
+
+    <pre>
+SELECT ?style
+WHERE {
+    ?cathedral ex:hasStyle ?style .
+}
+    </pre>
+
+    <p>
+        This query retrieves the architectural style of the cathedral, highlighting its Gothic structure and Renaissance influence.
+    </p>
+</section>
+
+<!-- CIERRE -->
+<section>
+    <p>
+        These queries demonstrate how structured semantic data can be used to explore cultural heritage in a more efficient and interconnected way.
+    </p>
+</section>
+
+<!-- BOTÓN BACK TO HOME -->
+<div style="text-align:center; margin:40px;">
+    <a href="index.html" class="home-button">⬅ Back to Home</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Knowledge Engineering for the humanities - Cattedrale di Santa Maria del Fiore</p>
+</footer>
+
+</body>
+</html>
