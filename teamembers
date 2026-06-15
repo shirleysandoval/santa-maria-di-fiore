@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members - Cattedrale di Santa Maria del Fiore</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="sparql.html">SPARQL Queries</a></li>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TÍTULO -->
+<h1>Team Members</h1>
+
+<!-- CONTENIDO -->
+<section>
+
+    <p>
+        This project was developed collaboratively by the following team members. Each participant contributed to the research, organization of information, and development of the website structure using HTML, CSS, and semantic data concepts.
+    </p>
+
+    <ul>
+        <li><strong>Anna Moskovskaia</strong> – Research and content organization</li>
+        <li><strong>Shirley Sandoval</strong> – Web development and SPARQL integration</li>
+    </ul>
+
+    <p>
+        The teamwork allowed us to combine research and technical skills to build a structured digital representation of the Cattedrale di Santa Maria del Fiore.
+    </p>
+
+</section>
+
+<!-- BOTÓN BACK TO HOME -->
+<div style="text-align:center; margin:40px;">
+    <a href="index.html" class="home-button">⬅ Back to Home</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Knowledge Engineering for the humanities - Cattedrale di Santa Maria del Fiore</p>
+</footer>
+
+</body>
+</html>
