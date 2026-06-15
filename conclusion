@@ -1,18 +1,55 @@
-```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Conclusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion - Cattedrale di Santa Maria del Fiore</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Conclusion</h1>
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="sparql.html">SPARQL Queries</a></li>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TÍTULO -->
+<h1>Conclusion</h1>
+
+<!-- CONTENIDO -->
+<section>
 
     <p>
-        Santa Maria del Fiore is not only one of the most significant architectural landmarks in Italy, but also an important symbol of Florence’s cultural and artistic heritage. Through this project, we explored its history, architectural features, and international significance using digital humanities approaches.
+        The Cattedrale di Santa Maria del Fiore represents one of the most remarkable achievements in architectural and cultural history. Its construction reflects the artistic ambition and technological innovation of the Renaissance period, particularly through the groundbreaking work of Filippo Brunelleschi and the creation of its iconic dome.
+
+        This project allowed us to explore the cathedral not only from a historical and architectural perspective but also through a structured digital approach using RDF and SPARQL queries. By organizing information into connected data, it becomes possible to better understand the relationships between historical figures, architectural elements, and cultural context.
+
+        Overall, this work demonstrates how digital tools can enhance the study and preservation of cultural heritage, making complex historical information more accessible, organized, and meaningful for academic and educational purposes.
     </p>
 
-    <p>
-        The use of Linked Open
-```
+</section>
+
+<!-- BOTÓN BACK TO HOME -->
+<div style="text-align:center; margin:40px;">
+    <a href="index.html" class="home-button">⬅ Back to Home</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Knowledge Engineering for the humanities - Cattedrale di Santa Maria del Fiore</p>
+</footer>
+
+</body>
+</html>
