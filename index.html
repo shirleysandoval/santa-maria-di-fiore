@@ -5,237 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cattedrale di Santa Maria del Fiore</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Arial, sans-serif;
-            background-color:#f5f5f5;
-            line-height:1.6;
-        }
-
-        header{
-            background-color:#2c3e50;
-            padding:15px;
-            position:sticky;
-            top:0;
-            z-index:1000;
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-        }
-
-        nav ul li{
-            margin:0 15px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            font-weight:bold;
-            transition:0.3s;
-        }
-
-        nav ul li a:hover{
-            color:#f39c12;
-        }
-
-        .hero{
-            text-align:center;
-            padding:40px 20px;
-        }
-
-        .hero h1{
-            font-size:3rem;
-            font-weight:bold;
-            color:#2c3e50;
-            margin-bottom:25px;
-        }
-
-        .hero img{
-            width:80%;
-            max-width:800px;
-            border-radius:10px;
-            box-shadow:0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        section{
-            background:white;
-            margin:30px auto;
-            width:85%;
-            max-width:1000px;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        section h2{
-            color:#2c3e50;
-            margin-bottom:15px;
-        }
-
-        footer{
-            text-align:center;
-            background:#2c3e50;
-            color:white;
-            padding:20px;
-            margin-top:40px;
-        }
-
-        html{
-            scroll-behavior:smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header>
     <nav>
         <ul>
-            <li><a href="#history">History</a></li>
-            <li><a href="#architecture">Architecture</a></li>
-            <li><a href="#methodology">Methodology</a></li>
-            <li><a href="#sparql">SPARQL Queries</a></li>
-            <li><a href="#team">Team Members</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="sparql.html">SPARQL Queries</a></li>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
         </ul>
     </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
+
     <h1>Cattedrale di Santa Maria del Fiore</h1>
 
     <img src="santamaria.jpg" alt="Cattedrale di Santa Maria del Fiore">
+
 </div>
 
-<section id="history">
-    <h2>History</h2>
+<!-- INTRO SOLO BREVE -->
+<section>
+
     <p>
-Its history, construction began in 1296 on the site of the older cathedral of Santa Reparata under the direction of Arnolfo di Cambio, aiming to create the largest church in Tuscany to reflect the growing power
-and wealth of the Florentine Republic. Over the following century, the project saw contributions from iconic figures such as Giotto, who designed the adjacent campanile, and Andrea Pisano, 
-though progress was frequently slowed by the sheer ambition of the design and the limitations of medieval engineering. The most critical turning point occurred in 1418, when a public competition was held to solve 
-the seemingly impossible task of roofing the enormous central crossing, a challenge won by Brunelleschi. The completion of his dome in 1436 marked a pivotal moment in the transition from the Middle Ages to the Renaissance,
-and although the building remained largely complete for centuries, the facade underwent its final transformation in the late 19th century when Emilio de Fabris added the intricate Neo-Gothic design seen today.
+        Welcome to this digital project about the Cattedrale di Santa Maria del Fiore in Florence.
+        Explore its history, architecture, and structured data representation through SPARQL queries.
+        Use the navigation menu above to access each section of the project.
     </p>
+
 </section>
 
-<section id="architecture">
-    <h2>Architecture</h2>
-    <p>
-The architecture of the Cattedrale di Santa Maria del Fiore is defined by its massive, three-nave basilica layout that adheres to Italian Gothic principles while incorporating groundbreaking Renaissance engineering.
-Its most striking feature is the enormous octagonal dome, a self-supporting, double-shell structure designed by Filippo Brunelleschi that utilized an innovative herringbone brick pattern and concealed internal stone 
-and iron chains to manage structural stress without the need for external flying buttresses. The exterior is famous for its intricate polychrome marble cladding—featuring geometric patterns of white, green,
-and red stone—while the interior is marked by expansive, austere spaces leading toward the monumental dome, which is crowned by a delicate, functional lantern that provides essential stability to the apex.
-    </p>
-</section>
-
-<section id="methodology">
-    <h2>Methodology</h2>
-    <p>
-This project was developed following a structured process to organize information about the Cattedrale di Santa Maria del Fiore and present it in a web format. First, reliable information about the cathedral was collected, 
-focusing on its history, architecture, and cultural importance. This content was then organized into clear categories to be used in the website sections.
-
-Next, a semantic structure was designed using RDF concepts, where information was represented in the form of subject–predicate–object relationships. This helped define how different elements such as the cathedral, 
-architects, and location are connected. Based on this structure, SPARQL queries were created to demonstrate how the data could be retrieved and analyzed in a more efficient and meaningful way.
-
-After defining the data model, the website was built using HTML and CSS. An index page was created with a navigation menu that links to each section of the project, including History, Architecture, Methodology, 
-SPARQL Queries, Team Members, and Conclusion. The design was kept simple and responsive to ensure easy reading and navigation.
-
-Finally, the project was published using GitHub Pages, allowing the website to be accessible online. The image of the cathedral was added to visually support the content, and all files 
-were organized in a repository for proper deployment and presentation.
-
-    </p>
-</section>
-
-<section id="sparql">
-    <h2>SPARQL Queries</h2>
-
-    <p>
-        The following SPARQL queries were used to retrieve and explore structured information about the Cattedrale di Santa Maria del Fiore. These queries were created based on RDF triples, where data is organized into subject–predicate–object relationships.
-    </p>
-
-    <h3>1. Query to find the architect of the cathedral</h3>
-    <pre>
-SELECT ?architect
-WHERE {
-    ?cathedral ex:hasArchitect ?architect .
-}
-    </pre>
-    <p>
-        This query retrieves the name of the architect(s) associated with the cathedral, such as Filippo Brunelleschi, who designed the famous dome.
-    </p>
-
-    <h3>2. Query to find the location of the cathedral</h3>
-    <pre>
-SELECT ?location
-WHERE {
-    ?cathedral ex:locatedIn ?location .
-}
-    </pre>
-    <p>
-        This query returns the geographical location of the cathedral, which is Florence, Italy.
-    </p>
-
-    <h3>3. Query to retrieve historical information</h3>
-    <pre>
-SELECT ?history
-WHERE {
-    ?cathedral ex:hasHistory ?history .
-}
-    </pre>
-    <p>
-        This query extracts historical descriptions related to the construction and development of the cathedral over time.
-    </p>
-
-    <h3>4. Query to retrieve architectural style</h3>
-    <pre>
-SELECT ?style
-WHERE {
-    ?cathedral ex:hasStyle ?style .
-}
-    </pre>
-    <p>
-        This query returns the architectural style of the cathedral, highlighting its Gothic elements and Renaissance influence.
-    </p>
-
-    <p>
-        These queries demonstrate how structured data can be used to connect and retrieve information efficiently about historical and cultural heritage resources.
-    </p>
-</section>
-<section id="team">
-    <h2>Team Members</h2>
-
-    <p>
-        This project was developed by:
-    </p>
-
-    <ul>
-        <li><strong>Anna Moskovskaia</strong></li>
-        <li><strong>Shirley Sandoval</strong></li>
-    </ul>
-</section>
-<section id="conclusion">
-    <h2>Conclusion</h2>
-    <p>
-        The Cattedrale di Santa Maria del Fiore is one of the most important examples 
-        of Renaissance architecture and a symbol of Florence’s cultural and historical heritage. 
-        Through this project, information about the cathedral was organized using RDF and explored through SPARQL queries,
-        making it possible to represent and retrieve knowledge in a structured way. This approach not only highlights the historical
-        and architectural significance of the cathedral but also demonstrates how semantic web technologies can support the preservation, 
-        organization, and exploration of cultural heritage information for educational and research purposes.
-
-    </p>
-</section>
-
+<!-- FOOTER -->
 <footer>
     <p>Knowledge Engineering for the humanities - Cattedrale di Santa Maria del Fiore</p>
 </footer>
