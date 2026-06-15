@@ -124,3 +124,7 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* JUSTIFICAR TODO EL TEXTO DE TODAS LAS PÁGINAS */
+p {
+    text-align: justify;
+}
